@@ -1,0 +1,493 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    line-height: 1.6;
+    color: #333;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  
+  /* Header */
+  header {
+    background: rgba(0, 0, 0, 0.547); 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin: 0 1rem;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #1d9e3bbe;
+  }
+  
+  .signup-btn {
+    padding: 0.4rem 1.1rem;
+    border: 2px solid hwb(139 10% 32%);
+    border-radius: 5px; /* Curved corners */
+    color: white;
+    background: transparent;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background 0.1s, color 0.1s, box-shadow 0.1s ease;
+  }
+  
+  .signup-btn:hover {
+    background: none; /* Green background on hover */
+    color: black; /* Text color changes to black on hover */
+    cursor: pointer;
+  }
+  
+
+
+  .hero-section .hero-image img{
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Optional: centers the content horizontally */
+    position: relative;
+    color: #ad3838;
+    width: 100%;
+    height: 400px;
+  }
+
+  
+  .hero-section{
+    background: url('../assets/images/photo-1515569067071-ec3b51335dd0.jpg') no-repeat center fixed;
+    height: 100vh;
+  }
+
+  .hero-content {
+    padding-top: 340px;
+    position: relative;
+    text-align: left;
+    z-index: 10;
+    margin-left:  5%;
+    max-width: 100%;
+    color: white;
+  }
+  .hero-content img{
+    position: relative;
+    text-align: left;
+    z-index: 10;
+    object-fit:cover;
+  }
+  
+  .hero-content h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-content p {
+    margin: 1rem 0 2rem;
+    font-size: 1.5rem;
+    font-weight: 300;
+  }
+  
+  .btn {
+    padding: 0.8rem 1.5rem;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 1rem;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .btn:hover {
+    background: #218838;
+  }
+  
+  /* About Section */
+  .about-section {
+    text-align: left;
+    padding: 4em 4em;
+    background: white;
+  }
+  
+  .about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4em;
+  }
+  
+  .about-text {
+    flex: 3;
+  }
+  
+  .about-text h2 {
+    text-align: left;
+    font-size: 2.5rem;
+    margin-bottom: 1em;
+    color: rgba(134, 4, 4, 0.779);
+  }
+  
+  .about-text p {
+    font-size: 1.2em;
+    margin-bottom: 1.2em;
+    line-height: 1.6;
+  }
+  
+  .about-image {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .about-image img {
+    max-width: 100%;
+    border-radius: 40px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    height:auto;
+  }
+  
+  /* Add a subtle gray background to the services section */
+  #services {
+    background-color: #f5f5f560; /* Light gray */
+    padding: 50px 20px; /* Add padding for space around the content */
+    text-align: center; /* Center align text */
+    border-top: 4px solid hsla(0, 0%, 87%, 0.807); /* Optional: Top border for separation */
+    border-bottom: 3px solid #9c9c9c; /* Optional: Bottom border for separation */
+  }
+  
+  /* Services heading styling */
+  .services-container h2 {
+    color: #056008; /* Green color for heading */
+    font-size: 2rem; /* Increase font size for better visibility */
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  /* Service description styling */
+  .services-container p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+  /* Flexbox styling for service cards */
+  .services-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 22px;
+  }
+  
+  /* Individual card styling */
+  .service-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 300px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Image inside the service card */
+  .service-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+  
+  /* Heading in service cards */
+  .service-card h3 {
+    font-size: 1.1rem;
+    margin: 15px;
+    color: #333;
+    position: relative;
+    overflow: hidden;
+    transition: color 0.3s ease;
+  }
+  
+  /* Service card description */
+  .service-card p {
+    font-size: 0.9rem;
+    margin: 0 15px 15px;
+    color: #555;
+  }
+  
+  /* Hover effect for service cards */
+  .service-card:hover {
+    transform: scale(2.05); /* Slight zoom effect */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Prominent shadow */
+  }
+  
+  /* Add spacing between this section and the previous one */
+  #services {
+    margin-top: 50px;
+  }
+  
+  /* Add spacing between this section and the next one */
+  #services + section {
+    margin-top: 50px;
+  }
+  
+  
+  .service-card {
+    background-color: #bccdeb70;
+    color: #333;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 200px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+  
+  .service-card h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #147417;
+  }
+  
+  
+  .popup-overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+  }
+  
+  
+  
+  .popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 600px;
+    text-align: center;
+    animation: fadeIn 0.3s ease;
+  }
+  
+  .popup-content h2 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    color: #28a745;
+  }
+  
+  .popup-content p {
+    margin-bottom: 20px;
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.5;
+  }
+  
+  .popup-content button {
+    padding: 10px 20px;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+  }
+  
+  .popup-content button:hover {
+    background: #218838;
+  }
+  .hidden {
+    display: none;
+  }
+  * General Styles */
+  .contact-us-section {
+    color: #333;
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+  }
+  
+  .contact-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 30px;
+    background: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  
+  .contact-left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .contact-us-text {
+    font-size: 2rem;
+    padding: 20px;
+    background-color: #28a745; /* Green background */
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .contact-right {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .card {
+    background: #f8f9fa;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    text-align: left; /* Center align text inside the card */
+  }
+  
+  .card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .card p,
+  .card .time-row {
+    font-size: 1.1rem;
+    color: #555;
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .card .day {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .card .time {
+    color: #555;
+  }
+  
+  .email-link,
+  .location-link {
+    color: #28a745;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block; /* Ensure the links respect center alignment */
+    margin-top: 10px;
+    transition: color 0.3s ease;
+  }
+  
+  .email-link:hover,
+  .location-link:hover {
+    color: #218838;
+  }
+  
+  /* Responsive Layout */
+  @media (max-width: 768px) {
+    .contact-container {
+      flex-direction: column;
+      align-items: left;
+    }
+  
+  
+  
+    .contact-right {
+      gap: 5px;
+    }
+  }
+  /* Styling the icons and links */
+  .email-item, .location-item {
+    display: flex;
+    align-items: left; /* Align icon and text horizontally */
+    gap: 10px; /* Add space between the icon and the link */
+    justify-content: flex-start; /* Align everything to the left */
+    font-size: 1rem; /* Adjust font size */
+    color: #333; /* Text color */
+  }
+  
+  
+  
+  .email-link, .location-link {
+    text-decoration: none; /* Add the underline effect */
+    color: #333; /* Match the text color with the surrounding content */
+    font-weight: normal; /* Normal font weight for email text */
+  }
+  
+  .email-link:hover, .location-link:hover {
+    color: #555; /* Slightly darker on hover */
+    text-decoration: none; /* Remove underline on hover */
+  }
+  
+  
+  
+  
+  /* Fade-in Animation */
+  @keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+  }
+  

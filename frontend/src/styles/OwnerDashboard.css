@@ -1,0 +1,69 @@
+.owner-dashboard {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+}
+
+.navbar-btn {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.navbar-btn:hover {
+  background-color: #d32f2f;
+}
+
+.table-container {
+  margin-top: 20px;
+}
+
+.parking-history-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.parking-history-table th,
+.parking-history-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.parking-history-table th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.create-parking-spot {
+  margin-top: 20px;
+}
+
+.create-parking-spot form {
+  display: flex;
+  flex-direction: column;
+}
+
+.create-parking-spot form div {
+  margin-bottom: 10px;
+}
+
+.create-parking-spot form button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}

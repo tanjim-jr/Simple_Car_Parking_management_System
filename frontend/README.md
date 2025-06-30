@@ -1,4 +1,4 @@
-# Frontend - Simple Car Parking Management System
+# Getting Started - Simple Car Parking Management System
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
